@@ -1,17 +1,27 @@
 Getting started
----------------
+===============
 
-# Install dependencies:
+Install dependencies:
+```
 bundle install --path=vendor/bundle
+```
 
-# Updating modules:
+Install modules:
+```
 bundle exec librarian-puppet install
+```
 
-# Starting a VM
+Starting a VM
+```
 vagrant up
+```
 
-# Testing with test kitchen:
+Testing with test kitchen:
+```
 bundle exec kitchen test
+```
 
-# Applying the manifests:
+Applying the manifests:
+```
 puppet apply --modulepath=modules manifests/dev.pp
+```
