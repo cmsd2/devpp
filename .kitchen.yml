@@ -1,0 +1,16 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: puppet_apply
+  manifests_path: manifests
+  modules_path: modules
+
+platforms:
+  - name: ubuntu-15.04
+
+suites:
+  - name: default
+    provisioner:
+      manifest: dev.pp

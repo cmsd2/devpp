@@ -9,9 +9,7 @@ apt::source { 'hans_jorgen_hoel_rust_ppa':
   location => 'http://ppa.launchpad.net/hansjorg/rust/ubuntu/',
   release => 'vivid',
   repos => 'main',
-  key => [
-  'c03264cd6cadc10bfd6e708b37fd5e80bd6b6386',
-  ],
+  key => 'c03264cd6cadc10bfd6e708b37fd5e80bd6b6386',
 }
 
 package { 'rust-nightly':

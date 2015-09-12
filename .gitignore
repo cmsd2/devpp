@@ -6,3 +6,5 @@
 .vagrant/
 modules/
 vendor/
+.kitchen/
+.kitchen.local.yml

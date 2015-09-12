@@ -11,9 +11,7 @@ apt::source { 'spotify':
   release => 'stable',
   repos => 'non-free',
   #require => Apt::Key[spotify],
-  key => [
-    'BBEBDCB318AD50EC6865090613B00F1FD2C19886',
-  ]
+  key => 'BBEBDCB318AD50EC6865090613B00F1FD2C19886'
 }
 
 package { 'spotify-client':
