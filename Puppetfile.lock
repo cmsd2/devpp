@@ -1,0 +1,16 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    puppetlabs-apt (2.1.1)
+      puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
+    puppetlabs-stdlib (4.9.0)
+
+PATH
+  remote: ./local/modules/profile
+  specs:
+    profile (0.0.1)
+
+DEPENDENCIES
+  profile (>= 0)
+  puppetlabs-apt (>= 0)
+
