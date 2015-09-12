@@ -6,11 +6,11 @@ FORGE
     puppetlabs-stdlib (4.9.0)
 
 PATH
-  remote: ./local/modules/profile
+  remote: ./local/modules/profiles
   specs:
-    profile (0.0.1)
+    profiles (0.0.1)
 
 DEPENDENCIES
-  profile (>= 0)
+  profiles (>= 0)
   puppetlabs-apt (>= 0)
 

@@ -1,9 +1,13 @@
 case $lsbdistid {
-  'Debian': { include profile::debian }
+  'Debian': { include profiles::debian }
 }
 
 case $lsbdistcodename {
-  'jessie': { include profile::jessie }
+  'jessie': { include profiles::jessie }
+  'stretch': { 
+    include profiles::stretch
+    include profiles::iceweasel 
+  }
 }
 
 $pkgs = [
@@ -24,8 +28,9 @@ package { $pkgs:
   ensure => latest
 }
 
-include profile::java
-include profile::spotify
-include profile::iceweasel
-include profile::rust
+include profiles::java
+include profiles::spotify
+include profiles::rust
+
+
 
