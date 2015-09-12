@@ -21,6 +21,8 @@ $pkgs = [
   curl,
   golang,
   cmake,
+  dkms,
+  linux-headers-amd64,
   'docker.io',
 ]
 
